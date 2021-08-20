@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Container from '../../Containers/Container/Container';
 
-const id = () => {
+const Id = () => {
   const router = useRouter();
   console.log(router);
   let id = router.query.id;
@@ -13,4 +13,4 @@ const id = () => {
   );
 };
 
-export default id;
+export default Id;
