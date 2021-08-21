@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 const GloabalStyle = createGlobalStyle`
   a,a:hover{
     text-decoration:none;
-    color: white;
+    /* color: white; */
   }
   .row{
     margin:80px 0 !important;

@@ -17,6 +17,9 @@ export const FooterWrapper = styled.div`
     .iconFooter:hover{
         color: red !important;
     }
+    a{
+        color: white;
+    }
     a:hover{
         color: red !important;
     }

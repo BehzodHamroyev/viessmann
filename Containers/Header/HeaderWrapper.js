@@ -19,6 +19,12 @@ export const HeaderWrapper = styled.div`
       margin: auto 0;
       li {
         list-style: none;
+        a{
+          color: white;
+          &:hover{
+            color:black;
+          }
+        }
       }
     }
   }

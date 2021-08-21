@@ -1,16 +1,18 @@
 import { useRouter } from 'next/router';
 import Container from '../../Containers/Container/Container';
 
-const Id = () => {
+const User = () => {
   const router = useRouter();
-  console.log(router);
-  let id = router.query.id;
 
+  const id  = router.query.id;
+  console.log(id, router);
   return (
     <Container>
-      <p className="fw-bolder fs-1 d-flex justify-content-center">Product: {id}</p>
+      <p className="fw-bolder fs-1 d-flex justify-content-center">
+        Product: {id}
+      </p>
     </Container>
   );
 };
 
-export default Id;
+export default User;

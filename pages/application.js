@@ -1,17 +1,25 @@
 import React from 'react'
+import Baner from '../components/Baner/Baner';
+import Form from '../components/Form/Form';
 import Container from '../Containers/Container/Container';
+
 const dataBaner = {
   img: 'https://viessmann.vercel.app/images/services.jpg',
   title: `Сервисные услуги`,
   subTitle: `Полный ассортимент сервисных услуг компании Viessmann`,
 };
 
-const application = () => {
+
+
+const Application = () => {
+
+
     return (
       <Container>
-        <p className="d-flex justify-content-center fw-bolder fs-1">application </p>
+        <Baner data={dataBaner}/>
+       {/* <Form/> */}
       </Container>
     );
 }
 
-export default application
+export default Application;
