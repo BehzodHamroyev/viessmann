@@ -10,7 +10,7 @@ const Content = ({ data }) => {
             <div>
               <h1>{data.title}</h1>
               {data.subTitles.map((v, index) => {
-                return <p>{v.subTitle}</p>;
+                return <p key={index}>{v.subTitle}</p>;
               })}
             </div>
           </Fade>
