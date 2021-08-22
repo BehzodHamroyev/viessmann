@@ -95,7 +95,7 @@ export const shadowData = [
     topTitle: '',
     title: 'Контакт',
     link: 'news',
-    linkTitle: `ООО "Viessmann" в Узбекистане`,
+    linkTitle: `ООО Viessmann в Узбекистане`,
     icon: '',
   },
 ];

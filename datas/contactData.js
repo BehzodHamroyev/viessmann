@@ -11,7 +11,7 @@ export const shadowData = [
   },
   {
     topTitle: '',
-    title: 'Склад ООО "Viessmann"',
+    title: 'Склад ООО Viessmann',
     link: '#',
     linkTitle: `  Памятка водителю (PDF 1 MB)`,
     icon: <FaFile />,

@@ -2,7 +2,7 @@ const data = [
   {
     img: 'https://viessmann.vercel.app/images/howbuy.png',
     title: `Где купить?`,
-    subTitle: `Партнеры ООО "Viessmann"`,
+    subTitle: `Партнеры ООО Viessmann`,
     to: `/howBuy`,
     link: `Где купить`,
   },
