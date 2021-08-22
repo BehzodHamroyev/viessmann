@@ -81,7 +81,7 @@ export default function SimpleTabs() {
               <h1>1. product group 1</h1>
               {data?.map((value, index) => {
                 return (
-                  <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-5">
+                  <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-4  my-5">
                     <div className="my-2 mybox shadow w-100 d-flex flex-column align-items-center px-2 h-100">
                       <img className="w-75" src={value.img} alt="" />
                       <h6 className="my-4 fw-bold title">{value.title}</h6>

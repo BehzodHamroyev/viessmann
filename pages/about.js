@@ -1,4 +1,3 @@
-import React from 'react';
 import { CardData, shadowData } from '../datas/aboutData';
 import Baner from '../components/Baner/Baner';
 import Container from '../Containers/Container/Container';
@@ -6,7 +5,6 @@ import ShadowCard from '../components/shadowCard/shadowCard';
 import Content from '../components/Content/Content';
 import { data1, data2, data3, data4, data5 } from '../datas/aboutData';
 import Home2 from '../Containers/Home/Home2';
-import { Fade } from 'react-reveal/Fade';
 const dataBaner = {
   img: 'https://viessmann.vercel.app/images/about.webp',
   title: `Информация о компании Viessmann`,
@@ -49,16 +47,7 @@ const about = () => {
               );
             })}
           </div>
-          <div className="col-12 my-4 d-flex justify-content-center">
-            <iframe
-              className="w-100"
-              height="560"
-              src="https://www.youtube.com/embed/j9s5ZDJOZxw"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+  
         </div>
       </div>
       <Content data={data1} />
@@ -67,10 +56,10 @@ const about = () => {
           {CardData.map((v, i) => {
             return (
               <div key={i} className=" col-md-3 ">
-                  <div className="shadow w-100 h-100">
-                    <img src={v.img} className="w-100" alt="" />
-                    <h4 className="my-4 text-center">{v.title}</h4>
-                  </div>
+                <div className="shadow w-100 h-100">
+                  <img src={v.img} className="w-100" alt="" />
+                  <h4 className="my-4 text-center">{v.title}</h4>
+                </div>
               </div>
             );
           })}

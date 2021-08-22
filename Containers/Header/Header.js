@@ -1,28 +1,52 @@
-import React from 'react'
-import { HeaderWrapper } from './HeaderWrapper'
-import { headerData } from '../../datas/headerData'
-import Link from 'next/link'
-import { FaBars, FaSearch } from 'react-icons/fa'
+import React from 'react';
+import { HeaderWrapper } from './HeaderWrapper';
+import { headerData } from '../../datas/headerData';
+import Link from 'next/link';
+import { FaBars, FaSearch } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
+import toggle from '../../Redux/Action/globallAction';
 const Header = () => {
-    const data = headerData;
-    console.log(data);
-    return (
-        <HeaderWrapper>
-            <img src="https://viessmann.vercel.app/images/viessman%20logo.png" className="logo" alt="" className="logo" />
-            <ul className="menu">
-                {data.map((v, i) => {
-                    return <li className="m-o p-0" key={i}>
-                        <Link href={v.to}><a className="d-flex align-items-center ms-3 "><div className="fs-5 me-2 mb-2">{v.icon}</div>{v.title}</a></Link>
-                    </li>
-                })}
-            </ul>
-            < div className="d-flex justify-content-around align-items-center m-o p-0">
-                <FaBars className="d-block text-white  fs-3  me-2"/>
-                <FaSearch className="d-block text-white  fs-3 ms-2"/>
-            </div>
+  const data = headerData;
+  const sidebar = useSelector((state) => state.globalReducer.sidebar);
+  const isShow = () => {
+    toggle();
+  };
+  console.log(sidebar);
+  return (
+    <HeaderWrapper isShow={sidebar}>
+      <Link href="/">
+        <a>
+          <img
+            src="https://viessmann.vercel.app/images/viessman%20logo.png"
+            className="logo"
+            alt=""
+            className="logo"
+          />
+        </a>
+      </Link>
+      <ul className="menu d-md-flex ">
+        {data.map((v, i) => {
+          return (
+            <li className="m-o p-0" key={i}>
+              <Link href={v.to}>
+                <a className="d-flex align-items-center ms-3 ">
+                  <div className="fs-5 me-2 mb-2">{v.icon}</div>
+                  {v.title}
+                </a>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      <div className="d-flex justify-content-around align-items-center m-o p-0">
+        <FaBars
+          onClick={isShow}
+          className="d-block text-white bars  fs-3  me-2"
+        />
+        <FaSearch className="d-block text-white  fs-3 ms-2" />
+      </div>
+    </HeaderWrapper>
+  );
+};
 
-        </HeaderWrapper>
-    )
-}
-
-export default Header
+export default Header;
