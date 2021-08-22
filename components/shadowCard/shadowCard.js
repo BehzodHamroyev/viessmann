@@ -1,5 +1,3 @@
-import React from 'react';
-import { FaPhone } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
  const shadowCard = (props) => {
     console.log("salom");
