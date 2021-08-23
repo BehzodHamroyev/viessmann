@@ -32,7 +32,11 @@ const viessmannApp = () => {
         </div>
       </div>
       {data.map((v, i) => {
-        return <Content data={v} />;
+        return (
+          <div key={i}>
+            <Content data={v} />;
+          </div>
+        );
       })}
     </Container>
   );

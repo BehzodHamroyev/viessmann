@@ -30,10 +30,10 @@ const data = [
 ];
 const User = () => {
   const router = useRouter();
-
-  const id = router.query.id;
+  let id = router.query.id;
   console.log(id, router, data[id]);
-   const dataId=data[id]
+  id=id-1;
+   const dataId=data[0]
   return (
     <Container>
       <Baner data={dataId} />
@@ -88,7 +88,6 @@ const User = () => {
         </div>
         <div className="col-md-4">
           {shadowData?.map((v, i) => {
-            console.log(v);
             return (
               <div key={i} className="my-3">
                 <ShadowCard data={v} />

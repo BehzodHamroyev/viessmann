@@ -1,12 +1,32 @@
 import React from 'react';
+import { FaMap, FaFile } from 'react-icons/fa';
 import Baner from '../components/Baner/Baner';
+import ShadowCard from '../components/shadowCard/shadowCard';
 import Container from '../Containers/Container/Container';
+import Home2 from '../Containers/Home/Home2';
 const dataBaner = {
   img: 'https://viessmann.vercel.app/images/howbuy.png',
   title: `Где купить?`,
   subTitle: `Партнеры ООО "Viessmann`,
 };
-const howBuy = () => {
+const shadowData = [
+  {
+    topTitle:
+      'При движении по дорогам обязательно соблюдайте правила дорожного движения и ограничение скоростей.',
+    title: 'Планирование маршрута',
+    link: '#',
+    linkTitle: ` ООО "Виссманн" (офис) в Google Maps`,
+    icon: <FaMap />,
+  },
+  {
+    topTitle: '',
+    title: 'Склад ООО Viessmann',
+    link: '#',
+    linkTitle: `  Памятка водителю (PDF 1 MB)`,
+    icon: <FaFile />,
+  },
+];
+const HowBuy = () => {
   return (
     <Container>
       <Baner data={dataBaner} />
@@ -62,14 +82,13 @@ const howBuy = () => {
             </div>
           </div>
           <div className="col-md-4">
-            {shadowData?.map((v, i) => {
-              console.log(v);
+            {/* {shadowData?.map((v, i) => {
               return (
                 <div key={i} className="my-3">
                   <ShadowCard data={v} />
                 </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>
@@ -81,4 +100,4 @@ const howBuy = () => {
   );
 };
 
-export default howBuy;
+export default HowBuy;
