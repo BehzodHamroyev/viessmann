@@ -1,5 +1,5 @@
 import Fade from 'react-reveal/Fade';
- const shadowCard = (props) => {
+ const ShadowCard = (props) => {
     console.log("salom");
   return (
     <Fade right>
@@ -17,4 +17,4 @@ import Fade from 'react-reveal/Fade';
   );
 };
 
-export default shadowCard;
+export default ShadowCard;

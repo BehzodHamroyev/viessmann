@@ -14,7 +14,7 @@ const Home1 = () => {
         <div className="after">
           <div className="  row  ">
             <Fade left duration={2000}>
-              <div className="col-6 homeBanner">
+              <div className="col-6 homeBanner ms-4">
                 <h2>Фирма Viessmann - ваш партнер во всех областях</h2>
                 <p>
                   Компания Viessmann Group является одним из ведущих в мире
