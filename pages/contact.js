@@ -76,6 +76,7 @@ const contact = () => {
             })}
           </div>
         </div>
+     
       </div>
       <div className="px-4">
         <h2 className="text-center">Выбор проекта</h2>
