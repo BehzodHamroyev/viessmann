@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.css';
+import Head from 'next/head';
 import { Provider } from 'react-redux';
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 import store from '../Redux/Store';
 const GloabalStyle = createGlobalStyle`
  
@@ -10,6 +10,9 @@ const GloabalStyle = createGlobalStyle`
   }
   .row{
     margin:80px 0 !important;
+  }
+  h2{
+    font-size:18px;
   }
 `;
 function MyApp({ Component, pageProps }) {
@@ -31,4 +34,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;

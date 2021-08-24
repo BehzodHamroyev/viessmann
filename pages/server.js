@@ -40,7 +40,7 @@ const server = () => {
       <Baner data={dataBaner} />
       <div className="container">
         <div className="row ">
-          <div className="col-md-8">
+          <div className="col-md-8 col-10">
             <h2>Полный ассортимент сервисных услуг Viessmann</h2>
             <p>
               Оборудование Viessmann отличается высокой надежностью, при
@@ -69,26 +69,27 @@ const server = () => {
               рынка.
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-10">
             <ShadowCard data={shadowData} />
           </div>
         </div>
-
         <div className=" d-flex justify-content-center ">
           <Fade bottom>
-            <div className="row  m-0 my-4">
+         <div className="container d-flex justify-content-center">
+              <div className="row  m-0 my-4">
               {data?.map((v, i) => {
                 return (
-                  <div key={i} className="col-lg-3 col-md-6">
+                  <div key={i} className="col-lg-3 col-md-6 col-10">
                     <CardLink data={v} />
                   </div>
                 );
               })}
             </div>
+         </div>
           </Fade>
         </div>
-        <div className="row ">
-          <div className="col-md-8">
+        <div className="row">
+          <div className="col-md-8 col-10">
             <h2>Гарантийные Обязательства</h2>
             <p>
               Оборудование Viessmann отличается высокой надежностью, при
@@ -112,7 +113,7 @@ const server = () => {
               службы Viessmann. рынка.
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-10">
             <ShadowCard data={shadowData} />
           </div>
         </div>

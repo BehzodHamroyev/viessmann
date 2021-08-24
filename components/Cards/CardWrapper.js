@@ -6,6 +6,7 @@ export const CardWrapper = styled.div`
     transition: all linear 3s !important;
     img {
       border-radius: 20px;
+      min-width: 100px !important;
     }
     .affterCard {
       text-align: center;

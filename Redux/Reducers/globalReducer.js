@@ -1,7 +1,7 @@
 import { TOGGLE_SIDE } from '../type';
 
 const initialState = {
-  sidebar: false,
+  sidebar: true,
 };
 const reuder = (state = initialState, action) => {
   switch (action.type) {

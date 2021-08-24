@@ -9,12 +9,12 @@ const Card = (props) => {
     <CardWrapper>
       <img
         src={props.data.img}
-        className="img-fluid h-100"
+        className="img-fluid imgCard h-100"
         alt=""
       />
       <div className="affterCard">
         <Link href={props.data.to}>
-          <a className="fs-2 fw-bold">{props.data.title}</a>
+          <a className="fs-4 fw-bold">{props.data.title}</a>
         </Link>
         <p className="p-0 m-0">{props.data.subTitle}</p>
       </div>

@@ -9,7 +9,7 @@ const Footer = () => {
     console.log(data);
     return (
       <FooterWrapper>
-        <div className="container pt-3">
+        <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 d-flex flex-column justify-content-between">
               <img
