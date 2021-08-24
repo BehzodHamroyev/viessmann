@@ -9,7 +9,7 @@ const Example = (props) => {
           <Form className="w-100 ">
             <Row form>
               <Col md={12}>
-                <FormGroup>
+                <FormGroup className="mt-4">
                   <Label for="exampleEmail">Email</Label>
                   <Input
                     type="email"
@@ -20,7 +20,7 @@ const Example = (props) => {
                 </FormGroup>
               </Col>
               <Col md={12}>
-                <FormGroup>
+                <FormGroup className="mt-4">
                   <Label for="examplePassword">Password</Label>
                   <Input
                     type="password"
@@ -31,7 +31,7 @@ const Example = (props) => {
                 </FormGroup>
               </Col>
             </Row>
-            <FormGroup>
+            <FormGroup className="mt-4">
               <Label for="exampleAddress">Address</Label>
               <Input
                 type="text"
@@ -40,7 +40,7 @@ const Example = (props) => {
                 placeholder="1234 Main St"
               />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className="mt-4">
               <Label for="exampleAddress2">Address 2</Label>
               <Input
                 type="text"
@@ -51,25 +51,25 @@ const Example = (props) => {
             </FormGroup>
             <Row form>
               <Col md={12}>
-                <FormGroup>
+                <FormGroup className="mt-4">
                   <Label for="exampleCity">City</Label>
                   <Input type="text" name="city" id="exampleCity" />
                 </FormGroup>
               </Col>
               <Col md={12}>
-                <FormGroup>
+                <FormGroup className="mt-4">
                   <Label for="exampleState">State</Label>
                   <Input type="text" name="state" id="exampleState" />
                 </FormGroup>
               </Col>
               <Col md={12}>
-                <FormGroup>
+                <FormGroup className="mt-4">
                   <Label for="exampleZip">Zip</Label>
                   <Input type="text" name="zip" id="exampleZip" />
                 </FormGroup>
               </Col>
             </Row>
-            <FormGroup className="mt-3" check>
+            <FormGroup className="mt-4" check>
               <Input type="checkbox" name="check" id="exampleCheck" />
               <Label for="exampleCheck" check>
                 Check me out

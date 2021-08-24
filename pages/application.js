@@ -16,7 +16,6 @@ const Application = () => {
 
     return (
       <Container>
-        {/* <Baner data={dataBaner} /> */}
         <h2 className="text-center mt-4">Отопление жилых зданий | Консультационная поддержка Viessmann</h2>
         <Form/>
       </Container>
