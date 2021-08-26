@@ -37,17 +37,10 @@ const Header = () => {
         })}
       </ul>
       <div className="d-flex justify-content-around align-items-center m-o p-0">
-        {(sidebar && (
           <FaBars
             onClick={isShow}
             className="d-block text-white bars  fs-5  me-2"
           />
-        )) || (
-          <FaTimes
-            onClick={isShow}
-            className="d-block text-white bars  fs-5  me-2"
-          />
-        )}
         <FaSearch className="d-block text-white  fs-5 ms-2" />
       </div>
     </HeaderWrapper>
