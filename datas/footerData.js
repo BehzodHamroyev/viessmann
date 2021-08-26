@@ -24,19 +24,19 @@ const footerData = [
     title: "Домовладельцам",
     links: [
         {
-            to: "/category/1",
+            to: "/howBuy",
             link: "Где купить ?"
         },
         {
-            to: "/category/2",
+            to: "/application",
             link: "Бесплатная консультация"
         },
         ,
         {
-            to: "/category/3",
+            to: "/smartHome",
             link: "Smart - home"
         }, , {
-            to: "/category/4",
+            to: "/viessmannApp",
             link: "Приложения Viessmann"
         },
     ]
