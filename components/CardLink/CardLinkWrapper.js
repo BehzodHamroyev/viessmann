@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardLinkWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
@@ -12,7 +12,7 @@ export const CardLinkWrapper = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
   }
 .content{
     padding: 0 20px;
