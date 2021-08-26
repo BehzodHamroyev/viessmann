@@ -12,7 +12,7 @@ const Home1 = () => {
         />
 
         <div className="after">
-          <div className="row d-sm-flex justify-content-sm-center">
+          <div className="row">
             <Fade left duration={2000}>
               <div className="col-md-6 col-10 homeBanner ms-4">
                 <h2>Фирма Viessmann - ваш партнер во всех областях</h2>

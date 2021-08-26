@@ -6,11 +6,10 @@ import Link from 'next/link'
 
 const Footer = () => {
     const data = footerData;
-    console.log(data);
     return (
       <FooterWrapper>
         <div className="container">
-          <div className="row">
+          <div className="row pt-5">
             <div className="col-lg-3 col-md-6 d-flex flex-column justify-content-between">
               <img
                 src="https://viessmann.vercel.app/images/viessman%20logo.png"
@@ -34,7 +33,7 @@ const Footer = () => {
             </div>
             {data?.map((v, i) => {
               return (
-                <div className="col-lg-3 col-md-6">
+                <div key={i} className="col-lg-3 col-md-6">
                   <h3 className="text-white">{v.title}</h3>
                   <div className="d-flex flex-column">
                     {v.links.map((value, index) => {

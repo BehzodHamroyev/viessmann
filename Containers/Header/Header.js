@@ -2,7 +2,7 @@ import React from 'react';
 import { HeaderWrapper } from './HeaderWrapper';
 import { headerData } from '../../datas/headerData';
 import Link from 'next/link';
-import { FaBars, FaSearch } from 'react-icons/fa';
+import { FaBars, FaSearch,FaTimes } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import toggle from '../../Redux/Action/globallAction';
 const Header = () => {
@@ -11,7 +11,6 @@ const Header = () => {
   const isShow = () => {
     toggle();
   };
-  console.log(sidebar);
   return (
     <HeaderWrapper isShow={sidebar}>
       <Link href="/">
@@ -20,16 +19,15 @@ const Header = () => {
             src="https://viessmann.vercel.app/images/viessman%20logo.png"
             className="logo"
             alt=""
-            className="logo"
           />
         </a>
       </Link>
-      <ul className="menu d-md-flex ">
+      <ul className="menu d-md-flex">
         {data.map((v, i) => {
           return (
-            <li className="m-o p-0" key={i}>
+            <li onClick={isShow} className="m-o" key={i}>
               <Link href={v.to}>
-                <a className="d-flex align-items-center ms-3 ">
+                <a className="d-flex align-items-center m-0 p-0 ms-3">
                   <div className="fs-5 me-2 mb-2">{v.icon}</div>
                   {v.title}
                 </a>
@@ -39,11 +37,18 @@ const Header = () => {
         })}
       </ul>
       <div className="d-flex justify-content-around align-items-center m-o p-0">
-        <FaBars
-          onClick={isShow}
-          className="d-block text-white bars  fs-3  me-2"
-        />
-        <FaSearch className="d-block text-white  fs-3 ms-2" />
+        {(sidebar && (
+          <FaBars
+            onClick={isShow}
+            className="d-block text-white bars  fs-5  me-2"
+          />
+        )) || (
+          <FaTimes
+            onClick={isShow}
+            className="d-block text-white bars  fs-5  me-2"
+          />
+        )}
+        <FaSearch className="d-block text-white  fs-5 ms-2" />
       </div>
     </HeaderWrapper>
   );

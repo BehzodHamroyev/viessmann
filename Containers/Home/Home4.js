@@ -14,7 +14,7 @@ const Home4 = () => {
         <div className="row  m-0 my-4">
           {data?.map((v, i) => {
             return (
-              <div key={i} className="col-lg-3 col-md-6">
+              <div key={i} className="col-lg-3 col-md-6 mt-4">
                 <CardLink data={v} />
               </div>
             );

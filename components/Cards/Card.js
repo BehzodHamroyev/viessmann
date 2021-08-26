@@ -12,7 +12,7 @@ const Card = (props) => {
         className="img-fluid imgCard h-100"
         alt=""
       />
-      <div className="affterCard">
+      <div className="affterCard d-flex flex-column justify-content-center">
         <Link href={props.data.to}>
           <a className="fs-4 fw-bold">{props.data.title}</a>
         </Link>

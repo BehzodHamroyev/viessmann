@@ -7,6 +7,7 @@ export const CardWrapper = styled.div`
     img {
       border-radius: 20px;
       min-width: 100px !important;
+      object-fit: cover;
     }
     .affterCard {
       text-align: center;

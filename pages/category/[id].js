@@ -38,7 +38,6 @@ const User = () => {
     <Container>
       <Baner data={dataId} />
       <div className="container d-flex justify-content-center">
-        {' '}
         <div className="row d-flex justify-content-center">
           <div className="col-md-8 col-10">
             <div>

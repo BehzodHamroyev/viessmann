@@ -50,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SimpleTabs() {
-  console.log(data);
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -69,10 +68,10 @@ export default function SimpleTabs() {
             onChange={handleChange}
             aria-label="simple tabs example"
           >
-            <Tab label="Item One" {...a11yProps(0)} />
-            <Tab label="Item Two" {...a11yProps(1)} />
-            <Tab label="Item Three" {...a11yProps(2)} />
-            <Tab label="Item four" {...a11yProps(3)} />
+            <Tab label="Жилые здания" {...a11yProps(0)} />
+            <Tab label="Предприятия" {...a11yProps(1)} />
+            <Tab label="Индустрия" {...a11yProps(2)} />
+            <Tab label="Коммунальная техника" {...a11yProps(3)} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0}>
@@ -81,7 +80,10 @@ export default function SimpleTabs() {
               <h1>1. product group 1</h1>
               {data?.map((value, index) => {
                 return (
-                  <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-4  my-5">
+                  <div
+                    key={index}
+                    className="col-12 col-sm-12 col-md-6 col-lg-4  my-5"
+                  >
                     <div className="my-2 mybox shadow w-100 d-flex flex-column align-items-center px-2 h-100">
                       <img className="w-75" src={value.img} alt="" />
                       <h6 className="my-4 fw-bold title">{value.title}</h6>
@@ -100,8 +102,8 @@ export default function SimpleTabs() {
           Item Three
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <div className="container ">
-            <div className="row">
+          <div className="container m-0 ">
+            <div className="row m-0">
               <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-5">
                 <div className="my-2 shadow w-100 d-flex flex-column align-items-center px-2 h-100 mybox">
                   <img

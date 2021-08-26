@@ -41,32 +41,41 @@ export const HeaderWrapper = styled.div`
     }
   }
   @media screen and (max-width: 900px) {
+    .logo {
+      width: 120px;
+    }
     ul {
       position: absolute;
-      padding: 0 50px;
-      /* opicity: */
-      opacity: ${(props) => props.isShow && '0'||"1"};
-      width: 300px;
+      padding: 40px 20px;
+      opacity: ${(props) => (props.isShow && '0') || '1'};
+      width: 200px;
       height: 100vh;
       top: 80px;
       right: 0px;
-      padding: 0;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      text-align: start !important ;
-      justify-content: space-around;
+      justify-content: start;
       background-color: white;
       transition: all linear 0.3s;
       z-index: 3000;
       li {
+        width: 100%;
+
         a {
+          text-align: start !important;
           color: black !important;
+
           &:hover {
             color: red !important;
           }
         }
       }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    ul {
+      box-shadow: 0 4px 8px 0 grey;
     }
   }
 `;
